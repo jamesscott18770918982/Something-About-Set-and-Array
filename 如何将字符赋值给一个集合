@@ -1,0 +1,24 @@
+public class ArrayStore {
+
+	static String s1 = "I";
+	static String s2 = "Love";
+	static String s3 = "China";
+	
+	static ArrayList<String> list = new ArrayList<String>();
+	
+	public static void main(String[] args) {
+  
+    //使用泛型集合的add方法
+		list.add(s1);
+		list.add(s2);
+		list.add(s3);
+    
+    //求泛型实例的长度
+		int length = list.size();
+		for(int i = 0;i<length;i++){
+    
+      //循环输出泛型实例的值
+			System.out.println(list.get(i));
+		}
+	}
+}
